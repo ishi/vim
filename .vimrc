@@ -30,13 +30,13 @@
 	" set spell							" spell checking on
 	
 	" Setting up the directories {
-		"set backup						" backups are nice ...
-		"set backupdir=$HOME/.vimbackup	" but not when they clog .
-		"set directory=$HOME/.vimswap	" Same for swap files
+		set backup						" backups are nice ...
+		set backupdir=$HOME/.vimbackup	" but not when they clog .
+		set directory=$HOME/.vimswap	" Same for swap files
 		
 		" Creating directories if they don't exist
-		"silent execute '!mkdir -p $HOME/.vimbackup'
-		"silent execute '!mkdir -p $HOME/.vimswap'
+		silent execute '!mkdir -p $HOME/.vimbackup'
+		silent execute '!mkdir -p $HOME/.vimswap'
 		
 		set nobackup
 		set noswapfile
@@ -62,6 +62,7 @@
 
 	set lazyredraw						" do not redraw while running macros (much faster) (LazyRedraw)
 	set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$ " what to show when I hit :set list
+	set list
 
 	set backspace=indent,eol,start		" make backspace work normal (indent, eol, start)
 	set linespace=0						" could be < 0
@@ -80,8 +81,6 @@
 	set scrolloff=5						" minimum lines to keep above and below cursor
 	set foldenable						" auto fold code
 	set gdefault						" the /g flag on :s substitutions by default
-	set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
-	set list
 " }
 
 " Formatting {
