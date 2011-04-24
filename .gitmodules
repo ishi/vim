@@ -1,0 +1,3 @@
+[submodule "bundle/colors-peaksea"]
+	path = bundle/colors-peaksea
+	url = https://github.com/vim-scripts/peaksea.git
