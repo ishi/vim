@@ -35,7 +35,14 @@
 	set shortmess+=filmnrxoOtT  " abbrev. of messages (avoids 'hit enter')
 	set shortmess+=I            " dont show intro
 	" set spell                 " spell checking on
-	
+	" autocmd BufEnter * let &titlestring = hostname() . "[vim(" . expand("%:t") . ")]"
+	" set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{$USER}@%{hostname()}
+	if &term == "screen"
+		set t_ts=^[k
+		set t_fs=^[\
+	endif
+	set titlestring=%{$USER}@%{hostname()}:\ %-25.55F\ %a%r%m titlelen=70
+	set title
 	" Setting up the directories {
 	"set backup                      " backups are nice ...
 		" set backupdir=$HOME/.vim/backup  " but not when they clog .
@@ -78,6 +85,7 @@
 	set showmatch               " show matching brackets/parenthesis
 	set incsearch               " find as you type search
 	set hlsearch                " highlight search terms
+	set wrapscan                " When searching, will wrap from bottom of buffer to top when 'nexting'
 	set winminheight=0          " windows can be 0 line high 
 	set ignorecase              " case insensitive search
 	set smartcase               " case sensitive when uc present
