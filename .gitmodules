@@ -10,3 +10,6 @@
 [submodule "bundle/vim-ruby-refactoring"]
 	path = bundle/vim-ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "autoload/vim-pathogen"]
+	path = autoload/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
