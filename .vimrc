@@ -17,7 +17,8 @@
 " }
  
 " General {
-	set history=100             " how many lines of history to remember
+	set history=1000            " how many lines of history to remember
+	set undolevels=1000
 	set confirm                 " ask what to do about unsaved/read-only files
 	"set viminfo+=!             " save global variables that consists of upper case letters
 	set iskeyword+=_,$,@,#,-    " none of these should be word dividers, so make them not be
@@ -36,13 +37,13 @@
 	" set spell                 " spell checking on
 	
 	" Setting up the directories {
-		"set backup                      " backups are nice ...
-		set backupdir=$HOME/.vimbackup  " but not when they clog .
-		set directory=$HOME/.vimswap    " Same for swap files
+	"set backup                      " backups are nice ...
+		" set backupdir=$HOME/.vim/backup  " but not when they clog .
+		" set directory=$HOME/.vim/swap    " Same for swap files
 		
 		" Creating directories if they don't exist
-		silent execute '!mkdir -p $HOME/.vimbackup'
-		silent execute '!mkdir -p $HOME/.vimswap'
+		" silent execute '!mkdir -p $HOME/.vim/backup'
+		" silent execute '!mkdir -p $HOME/.vim/swap'
 		
 		set nobackup
 		set noswapfile
@@ -132,7 +133,7 @@
 	imap <down> <C-o>gj
 	map E ge
 
-	map <Enter> o<ESC> " insert new line after (without leaving command mode)
+	map <Enter> o<ESC> 	" insert new line after (without leaving command mode)
 
 	" Stupid shift key fixes
 	"cmap W w
