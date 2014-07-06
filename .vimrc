@@ -103,10 +103,10 @@
 	set wrap                    " wrap long lines
 	set autoindent              " indent at the same level of the previous line
 	set smartindent             " smart autoindenting for C programs
-	set shiftwidth=4            " use indents of 2 spaces
+	set shiftwidth=2            " use indents of 2 spaces
 	" set expandtab               " dont use tabs
-	set tabstop=4               " an indentation every four columns
-	set softtabstop=4
+	set tabstop=2               " an indentation every two columns
+	set softtabstop=2
 	set nosmarttab
 
 	"set matchpairs+=<:>        " match, to be used with % 
