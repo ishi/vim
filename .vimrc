@@ -26,7 +26,7 @@
 	set noerrorbells            " don't make noise on error messages
 	set novisualbell            " don't blink
 
-	filetype off
+	filetype on
 	filetype plugin indent on   " Automatically detect file types.
 	syntax on                   " syntax highlighting
 	set mouse=a                 " automatically enable mouse usage
