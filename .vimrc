@@ -97,6 +97,7 @@
 	set scrolloff=5             " minimum lines to keep above and below cursor
 	set foldenable              " auto fold code
 	set gdefault                " the /g flag on :s substitutions by default
+	set colorcolumn=121
 " }
 
 " Formatting {
@@ -104,10 +105,10 @@
 	set autoindent              " indent at the same level of the previous line
 	set smartindent             " smart autoindenting for C programs
 	set shiftwidth=2            " use indents of 2 spaces
-	" set expandtab               " dont use tabs
+	set noexpandtab               " dont use tabs
 	set tabstop=2               " an indentation every two columns
-	set softtabstop=2
-	set nosmarttab
+	set softtabstop=0
+	set smarttab
 
 	"set matchpairs+=<:>        " match, to be used with % 
 	set pastetoggle=<F12>       " pastetoggle (sane indentation on pastes)
